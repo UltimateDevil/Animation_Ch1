@@ -1,0 +1,55 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="48dp"
+            android:height="48dp"
+            android:viewportWidth="48"
+            android:viewportHeight="48">
+            <path
+                android:name="rectangle_1"
+                android:pathData="M 23 2 L 25 2 L 25 46 L 23 46 Z"
+                android:fillColor="#000"
+                android:strokeWidth="1"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="rectangle_1">
+        <aapt:attr name="android:animation">
+            <set xmlns:android="http://schemas.android.com/apk/res/android">
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="800"
+                    android:valueFrom="M 23 2 L 25 2 L 25 46 L 23 46 L 23 35 L 23 24 L 23 13 L 23 2"
+                    android:valueTo="M 22.6 2 L 28.9 2 L 40 24 L 28.9 46 L 22.6 46 L 35 24 L 28.8 13 L 22.6 2"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_linear_in"/>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:startOffset="800"
+                    android:duration="800"
+                    android:valueFrom="M 22.6 2 L 28.8 13 L 35 24 L 22.6 46 L 28.9 46 L 40 24 L 28.9 2 L 22.6 2"
+                    android:valueTo="M 23 2 L 23 13 L 23 24 L 23 35 L 23 46 L 25 46 L 25 2 L 23 2"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_linear_in"/>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:startOffset="1600"
+                    android:duration="800"
+                    android:valueFrom="M 23 2 L 25 2 L 25 46 L 23 46 L 23 35 L 23 24 L 23 13 L 23 2"
+                    android:valueTo="M 23.1 2 L 17.55 13 L 12 24 L 23.1 46 L 29.4 46 L 17 24 L 29.4 2 L 23.1 2"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_linear_in"/>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:startOffset="2400"
+                    android:duration="800"
+                    android:valueFrom="M 23.1 2 L 17.55 13 L 12 24 L 23.1 46 L 29.4 46 L 17 24 L 29.4 2 L 23.1 2"
+                    android:valueTo="M 23 2 L 25 2 L 25 46 L 23 46 L 23 35 L 23 24 L 23 13 L 23 2"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_linear_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

@@ -19,15 +19,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun startAnimate() {
         val d: Drawable = imageView.drawable
-        val d1: Drawable = imageView2.drawable
-        val d2: Drawable = imageView3.drawable
-        val d3: Drawable = imageView4.drawable
 
-        if (d is Animatable && d1 is Animatable && d2 is Animatable && d3 is Animatable) {
+        if (d is Animatable) {
             (d as Animatable).start()
-            (d2 as Animatable).start()
-            (d1 as Animatable).start()
-            (d3 as Animatable).start()
         }
 
     }
